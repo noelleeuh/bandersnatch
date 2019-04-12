@@ -1,0 +1,174 @@
+body {
+    /* height: 650px; */
+    height: 765px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.lvl-box {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3.5px solid Fuchsia;
+    outline: 2px solid orange;
+    width: 900px;
+    height: 620px;
+}
+
+.lvl-location {
+    background: black;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.lvl-content {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+}
+
+.lvl-content p {
+    color: Ivory;
+    margin-top: 10px;
+}
+
+.lvl-content img {
+    width: 700px
+}
+
+#anim-button {
+    position:absolute;
+    margin-left: 530px;
+    margin-top: 134px;
+    color: Ivory;
+    border-radius: .15em;
+    background: DeepPink;
+    font-size: 0.85em;
+    width: 140px;
+}
+
+.lvl-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lvl-buttons .button {
+    margin-left: 5px;
+    margin-right: 5px;
+    background: BlueViolet;
+    color: Ivory;
+    border-radius: .15em;
+}
+
+.lvl-buttons .button:focus {
+    outline: none;
+}
+
+.lvl-buttons .button:hover {background-color: MediumOrchid}
+
+.lvl-audio {
+    width: 0px;
+    margin-left: 10px;
+}
+
+#restart, #exit, #back-color {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#game-logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px
+}
+
+.side-buttons {
+    width: 0px;
+}
+
+.side-buttons button {
+    color: Ivory;
+    border-radius: .15em;
+    background: DeepPink;
+    font-size: 0.85em;
+}
+
+.side-buttons button:hover {background-color: HotPink}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+}
+
+#intro-logo {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.intro-blinking{
+    margin-top: 20px;
+    text-align: center;
+    animation: blinkingText 0.9s infinite;
+}
+
+@keyframes blinkingText{
+    0%{     color: gold;    }
+    50%{    color: transparent; }
+    100%{   color: gold;    }
+}
+
+.error-not-found {
+    text-align: center;
+}
+
+.error-not-found a {
+    text-decoration: none;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 1000px;
+    animation: appear-from-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes appear-from-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+#start-text {
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
